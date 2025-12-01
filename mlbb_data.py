@@ -1,13 +1,12 @@
 import requests
 import pandas as pd
 import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.metrics import silhouette_score
-from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.preprocessing import MinMaxScaler
 from scipy import stats
+import warnings
+warnings.filterwarnings('ignore')   
 
 
 def scrape_mlbb_data():
